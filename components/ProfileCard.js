@@ -36,9 +36,13 @@ let ProfileCard = props => {
                 background-color: #212121;
                 background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
             } 
+
+            .profile-card__title img {
+                max-width: 100%;
+            }
           `}</style>                              
             <div className="profile-card__image text-center" style={profileCardStyles()}>
-                <div className="profile-card__text text-center mb-5" style={profileCardText()}>
+                <div className="profile-card__text text-center mt-3" style={profileCardText()}>
                   <h1 className="profile-card__title display-1"><img src={props.profile.profile_logo.url} width="400" alt={RichText.asText(props.profile.profile_title)} /></h1>
                    <div className="font-weight-light my-5">Jersey City, New Jersey</div>
                    <div className="font-weight-light mt-2"><strong>Contact for music production inquiries:</strong><br/>info@HeEqualsMCSquared.com</div>

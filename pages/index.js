@@ -134,7 +134,7 @@ class Index extends React.Component {
             {this.props.home.map(homepage => (
               <div>
               
-                 <div className="row">
+                 <div className="row mx-0">
                     {homepage.data.body.map(slice => slice.slice_type == "profile_card" && <ProfileCard profile={slice.primary} />)}              
                     {homepage.data.body.map(slice => slice.slice_type == "tracklist" && <TracksCardAlt />)}  
                  </div>
