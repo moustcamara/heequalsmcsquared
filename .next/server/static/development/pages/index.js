@@ -252,8 +252,12 @@ let ProfileCard = props => {
   })), __jsx("div", {
     className: "font-weight-light my-5"
   }, "Jersey City, New Jersey"), __jsx("div", {
-    className: "font-weight-light mt-2"
-  }, __jsx("strong", null, "Contact for music production inquiries:"), __jsx("br", null), "info@HeEqualsMCSquared.com"))));
+    className: "font-weight-normal mt-2"
+  }, "Contact for music production inquiries:"), __jsx("div", {
+    className: "font-weight-light mt-2 d-flex align-items-center justify-content-center"
+  }, __jsx("span", {
+    class: "material-icons mr-2"
+  }, "email"), " moust@hemc2.com"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ProfileCard);
@@ -2332,14 +2336,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_helpers__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prismic-reactjs */ "prismic-reactjs");
 /* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prismic_reactjs__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_ProfileCard_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ProfileCard.js */ "./components/ProfileCard.js");
-/* harmony import */ var _components_TracksCardAlt_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/TracksCardAlt.js */ "./components/TracksCardAlt.js");
-/* harmony import */ var _layouts__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../layouts */ "./layouts/index.js");
-var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
+/* harmony import */ var react_meta_tags__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-meta-tags */ "react-meta-tags");
+/* harmony import */ var react_meta_tags__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_meta_tags__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_ProfileCard_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/ProfileCard.js */ "./components/ProfileCard.js");
+/* harmony import */ var _components_TracksCardAlt_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/TracksCardAlt.js */ "./components/TracksCardAlt.js");
+/* harmony import */ var _layouts__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../layouts */ "./layouts/index.js");
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
  // We create this in just a tick
+
 
 
 
@@ -2359,7 +2366,7 @@ function getTime(time) {
   }
 }
 
-class Index extends react__WEBPACK_IMPORTED_MODULE_4___default.a.Component {
+class Index extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
   constructor(props) {
     super(props);
     this.setTrack = this.setTrack.bind(this);
@@ -2448,11 +2455,30 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_4___default.a.Component {
     const currentTime = getTime(this.state.currentTime);
     const duration = getTime(this.state.duration);
     let tracklistData = this.props.home[0].data.body.find(slice => slice.slice_type == "tracklist").items;
-    return __jsx(_layouts__WEBPACK_IMPORTED_MODULE_7__["default"], null, this.props.home.map(homepage => __jsx("div", null, __jsx("div", {
+    return __jsx(_layouts__WEBPACK_IMPORTED_MODULE_8__["default"], null, this.props.home.map(homepage => __jsx("div", null, __jsx(react_meta_tags__WEBPACK_IMPORTED_MODULE_4___default.a, null, __jsx("title", null, "He = MC\xB2 | New Jersey Music Producer"), __jsx("meta", {
+      name: "description",
+      content: "Contact for music production inquiries."
+    }), __jsx("meta", {
+      property: "og:title",
+      content: "He = MC\xB2 | New Jersey Music Producer"
+    }), __jsx("meta", {
+      property: "og:image",
+      content: "https://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0="
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      href: "https://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0=",
+      sizes: "32x32"
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      href: "hhttps://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0=",
+      sizes: "16x16"
+    })), __jsx("div", {
       className: "row mx-0"
-    }, homepage.data.body.map(slice => slice.slice_type == "profile_card" && __jsx(_components_ProfileCard_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }, homepage.data.body.map(slice => slice.slice_type == "profile_card" && __jsx(_components_ProfileCard_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       profile: slice.primary
-    })), homepage.data.body.map(slice => slice.slice_type == "tracklist" && __jsx(_components_TracksCardAlt_js__WEBPACK_IMPORTED_MODULE_6__["default"], null))), __jsx("audio", {
+    })), homepage.data.body.map(slice => slice.slice_type == "tracklist" && __jsx(_components_TracksCardAlt_js__WEBPACK_IMPORTED_MODULE_7__["default"], null))), __jsx("audio", {
       ref: ref => this.player = ref
     }))));
   }
@@ -2527,6 +2553,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-meta-tags":
+/*!**********************************!*\
+  !*** external "react-meta-tags" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-meta-tags");
 
 /***/ }),
 

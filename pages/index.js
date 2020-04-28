@@ -5,6 +5,8 @@ import { linkResolver } from '../helpers';
 
 import { RichText } from 'prismic-reactjs';
 
+import MetaTags from 'react-meta-tags';
+
 
 import React, { Component } from 'react'
 
@@ -133,7 +135,14 @@ class Index extends React.Component {
         <DefaultLayout>
             {this.props.home.map(homepage => (
               <div>
-              
+                 <MetaTags>
+                    <title>He = MC² | New Jersey Music Producer</title>
+                    <meta name="description" content="Contact for music production inquiries." />
+                    <meta property="og:title" content="He = MC² | New Jersey Music Producer" />
+                    <meta property="og:image" content="https://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0=" />
+                    <link rel="icon" type="image/png" href="https://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0=" sizes="32x32" />
+                    <link rel="icon" type="image/png" href="hhttps://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0=" sizes="16x16" />
+                </MetaTags>
                  <div className="row mx-0">
                     {homepage.data.body.map(slice => slice.slice_type == "profile_card" && <ProfileCard profile={slice.primary} />)}              
                     {homepage.data.body.map(slice => slice.slice_type == "tracklist" && <TracksCardAlt />)}  

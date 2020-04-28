@@ -45,7 +45,8 @@ let ProfileCard = props => {
                 <div className="profile-card__text text-center mt-3" style={profileCardText()}>
                   <h1 className="profile-card__title display-1"><img src={props.profile.profile_logo.url} width="400" alt={RichText.asText(props.profile.profile_title)} /></h1>
                    <div className="font-weight-light my-5">Jersey City, New Jersey</div>
-                   <div className="font-weight-light mt-2"><strong>Contact for music production inquiries:</strong><br/>info@HeEqualsMCSquared.com</div>
+                   <div className="font-weight-normal mt-2">Contact for music production inquiries:</div>
+                   <div className="font-weight-light mt-2 d-flex align-items-center justify-content-center"><span class="material-icons mr-2">email</span> moust@hemc2.com</div>
                 </div>
             </div>
      </div>

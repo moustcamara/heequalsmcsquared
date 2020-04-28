@@ -56,7 +56,9 @@ var ProfileCard = function ProfileCard(props) {
     className: "font-weight-light my-5"
   }, "Jersey City, New Jersey"), __jsx("div", {
     className: "font-weight-light mt-2"
-  }, __jsx("strong", null, "Contact for music production inquiries:"), __jsx("br", null), "info@HeEqualsMCSquared.com"))));
+  }, __jsx("span", {
+    "class": "material-icons mr-2"
+  }, "email"), __jsx("strong", null, "Contact for music production inquiries:"), __jsx("br", null), "moust@hemc2.com"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ProfileCard);
@@ -64,4 +66,4 @@ var ProfileCard = function ProfileCard(props) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.58500ae5ec4c7cd4d8db.hot-update.js.map
+//# sourceMappingURL=index.js.7361300557d70c5be54f.hot-update.js.map
