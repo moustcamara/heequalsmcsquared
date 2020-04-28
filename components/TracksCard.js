@@ -21,8 +21,9 @@ let TracksCard = props => {
                 }
 
                 .tracklist-card__inner {
-                    width: 90%;
-                    margin-top: 50px
+                    width: 80%;
+                    margin-top: 75px;
+                    margin-bottom: 75px
                 }
 
                   .tracklist-card__current {
