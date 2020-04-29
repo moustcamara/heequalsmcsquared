@@ -16,14 +16,6 @@ import ReactGA from 'react-ga';
 import auth from './auth.ts'; // Sample authentication provider
 
 
-// Google Analytics tracking
-const trackingId = "UA-164918997-1"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-ReactGA.set({
-  userId: auth.currentUserId(),
-  // any data that is relevant to the user session
-  // that you would like to track with google analytics
-})
 
 /**
 * As you can see we are importing our layout here,
@@ -154,6 +146,14 @@ class Index extends React.Component {
                     <meta property="og:image" content="https://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0=" />
                     <link rel="icon" type="image/png" href="https://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0=" sizes="32x32" />
                     <link rel="icon" type="image/png" href="hhttps://cdn.beatstars.com/eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTQ4NDU5L2ltYWdlL042ZmppbE11MWlXci9pMzZqdm1mZnQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6bnVsbCwid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDB9fX0=" sizes="16x16" />
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164918997-1"></script>
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+
+                      gtag('config', 'UA-164918997-1');
+                    </script>
                 </MetaTags>
                  <div className="row mx-0">
                     {homepage.data.body.map(slice => slice.slice_type == "profile_card" && <ProfileCard profile={slice.primary} />)}              
