@@ -2,7 +2,7 @@
   "dependencies": {
     "@material-ui/icons": "^4.9.1",
     "bootstrap": "^4.4.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mediaelement": "^4.2.16",
     "navi": "^0.14.0",
     "next": "^9.3.4",
